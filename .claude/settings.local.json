@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:datafox.tw)",
+      "Bash(git -C /c/Users/jerry/Desktop/Demo/Website status)"
+    ]
+  }
+}
