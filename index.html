@@ -20,12 +20,13 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-brand">Jerry Tsai</a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">中文</button>
       <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -34,11 +35,11 @@
 
   <div class="mobile-nav" id="mobile-nav">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
   </div>
 
@@ -47,7 +48,7 @@
     <div class="hero-inner">
 
       <p class="hero-eyebrow anim-fade" style="--d:0.1s">
-        你好，世界 &nbsp;&middot;&nbsp; hello, world
+        Hello, World
       </p>
 
       <h1 class="hero-name anim-fade" style="--d:0.35s">
@@ -55,12 +56,12 @@
         <span class="name-en">Tsai Chen-Hung</span>
       </h1>
 
-      <!-- Beautiful Hugo signature hr.small -->
       <hr class="hero-divider anim-fade" style="--d:0.5s" />
-
+      <!---
       <p class="hero-sub anim-fade" style="--d:0.62s">
         <span class="c-teal">&gt;&nbsp;</span><span id="typed"></span><span class="cursor">▎</span>
       </p>
+      -->
 
       <div class="hero-contacts anim-fade" style="--d:0.88s">
         <a href="mailto:b7258ter@gmail.com" class="hc-link">
@@ -78,7 +79,7 @@
       </div>
 
       <a href="#about" class="scroll-indicator anim-fade" style="--d:1.1s">
-        <span class="mono">scroll</span>
+        <span class="mono" data-i18n="hero.scroll">scroll</span>
         <div class="scroll-chevron">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6 9 6 6 6-6"/></svg>
         </div>
@@ -91,32 +92,32 @@
   <section id="about" class="sec">
     <div class="container">
       <div class="sec-head reveal">
-        <h2>About</h2>
+        <h2 data-i18n="about.title">About</h2>
         <hr class="hr-small" />
       </div>
       <div class="about-wrap">
         <div class="about-text reveal">
-          <p>From Western Literature to Firmware Engineering — my path is built on the belief that the most capable engineers are shaped by more than just code.</p>
-          <p>I hold a <strong>Master's in Network Learning Technology</strong> from National Central University, and recently served as a <strong>UEFI Firmware Developer</strong> at Pegatron Corporation — writing, testing, and debugging low-level firmware.</p>
-          <p>Before that, I spent nearly two years managing the Cool English educational platform at NTNU, where our team grew it to <strong>over 1 million registered users</strong>. I also built Python automation tools that cut administrative workload by 80%, turning hours of manual work into one-line commands.</p>
-          <p>Today, I stay sharp through consistent algorithm practice and continue pushing myself to understand systems at their deepest level.</p>
+          <p data-i18n="about.p1">My name is Jerry. In coincidence, I transitioned from the field of Western Literature to software engineering, embarking on a journey to become an engineer.</p>
+          <p data-i18n="about.p2">I hold a <strong>Master's in Network Learning Technology</strong> from National Central University, and recently served as a <strong>UEFI Firmware Developer</strong> at Pegatron Corporation — writing, testing, and debugging low-level firmware.</p>
+          <p data-i18n="about.p3">Before that, I spent nearly two years managing the Cool English educational platform at NTNU, where our team grew it to <strong>over 1 million registered users</strong>. I also built Python automation tools that cut administrative workload by 80%, turning hours of manual work into one-line commands.</p>
+          <p data-i18n="about.p4">Today, I stay sharp through consistent algorithm practice and continue pushing myself to understand more new technology and tools.</p>
         </div>
         <div class="about-stats reveal">
           <div class="stat">
             <div class="stat-n">400+</div>
-            <div class="stat-l">LeetCode Problems</div>
+            <div class="stat-l" data-i18n="about.stat.leetcode">LeetCode Problems</div>
           </div>
           <div class="stat">
             <div class="stat-n">5+</div>
-            <div class="stat-l">Projects</div>
+            <div class="stat-l" data-i18n="about.stat.projects">Projects</div>
           </div>
           <div class="stat">
             <div class="stat-n">955</div>
-            <div class="stat-l">TOEIC Score</div>
+            <div class="stat-l" data-i18n="about.stat.toeic">TOEIC Score</div>
           </div>
           <div class="stat">
             <div class="stat-n">7.5</div>
-            <div class="stat-l">IELTS Band</div>
+            <div class="stat-l" data-i18n="about.stat.ielts">IELTS Band</div>
           </div>
         </div>
       </div>
@@ -127,7 +128,7 @@
   <section id="experience" class="sec sec-alt">
     <div class="container">
       <div class="sec-head reveal">
-        <h2>Experience &amp; Education</h2>
+        <h2 data-i18n="exp.title">Experience &amp; Education</h2>
         <hr class="hr-small" />
       </div>
       <div class="timeline">
@@ -136,16 +137,16 @@
           <div class="tl-dot"></div>
           <div class="tl-body">
             <div class="tl-meta">
-              <span class="tl-badge badge-work">Work</span>
+              <span class="tl-badge badge-work" data-i18n="exp.badge.work">Work</span>
               <span class="tl-date mono">Nov 2025 — Mar 2026</span>
             </div>
-            <h3 class="tl-title">UEFI Firmware Developer</h3>
-            <p class="tl-org">Pegatron Corporation &middot; Taipei, Taiwan</p>
+            <h3 class="tl-title" data-i18n="exp1.title">UEFI Firmware Developer</h3>
+            <p class="tl-org" data-i18n="exp1.org">Pegatron Corporation &middot; Taipei, Taiwan</p>
             <ul class="tl-list">
-              <li>Customized and delivered UEFI firmware builds based on customer and platform requirements.</li>
-              <li>Modified and maintained UEFI firmware source code for functional adjustments and bug fixes.</li>
-              <li>Performed firmware validation via smoke tests and stress tests to ensure system stability.</li>
-              <li>Analyzed UEFI logs and test results to identify and resolve firmware-related issues.</li>
+              <li data-i18n="exp1.li1">Customized and delivered UEFI firmware builds based on customer and platform requirements.</li>
+              <li data-i18n="exp1.li2">Modified and maintained UEFI firmware source code for functional adjustments and bug fixes.</li>
+              <li data-i18n="exp1.li3">Performed firmware validation via smoke tests and stress tests to ensure system stability.</li>
+              <li data-i18n="exp1.li4">Analyzed UEFI logs and test results to identify and resolve firmware-related issues.</li>
             </ul>
           </div>
         </div>
@@ -154,16 +155,16 @@
           <div class="tl-dot"></div>
           <div class="tl-body">
             <div class="tl-meta">
-              <span class="tl-badge badge-work">Work</span>
+              <span class="tl-badge badge-work" data-i18n="exp.badge.work">Work</span>
               <span class="tl-date mono">Apr 2021 — Dec 2022</span>
             </div>
-            <h3 class="tl-title">Project Assistant — Cool English Platform</h3>
-            <p class="tl-org">National Taiwan Normal University (NTNU) &middot; Taipei, Taiwan</p>
+            <h3 class="tl-title" data-i18n="exp2.title">Project Assistant — Cool English Platform</h3>
+            <p class="tl-org" data-i18n="exp2.org">National Taiwan Normal University (NTNU) &middot; Taipei, Taiwan</p>
             <ul class="tl-list">
-              <li>Led team in planning and executing online events and competitions, growing monthly active users by ~5%.</li>
-              <li>Organized 5 online competitions attracting 56,000+ participants with 17,000+ award recipients.</li>
-              <li>Grew platform to 260,000+ new registrations in two years, reaching 1 million users in 2022.</li>
-              <li>Built a Python automation script for data processing, reducing admin workload by 80%.</li>
+              <li data-i18n="exp2.li1">Led team in planning and executing online events and competitions, growing monthly active users by ~5%.</li>
+              <li data-i18n="exp2.li2">Organized 5 online competitions attracting 56,000+ participants with 17,000+ award recipients.</li>
+              <li data-i18n="exp2.li3">Grew platform to 260,000+ new registrations in two years, reaching 1 million users in 2022.</li>
+              <li data-i18n="exp2.li4">Built a Python automation script for data processing, reducing admin workload by 80%.</li>
             </ul>
           </div>
         </div>
@@ -172,11 +173,11 @@
           <div class="tl-dot"></div>
           <div class="tl-body">
             <div class="tl-meta">
-              <span class="tl-badge badge-edu">Education</span>
+              <span class="tl-badge badge-edu" data-i18n="exp.badge.edu">Education</span>
               <span class="tl-date mono">Sep 2023 — Jun 2025</span>
             </div>
-            <h3 class="tl-title">M.S. in Network Learning Technology</h3>
-            <p class="tl-org">National Central University (NCU) &middot; Taoyuan, Taiwan</p>
+            <h3 class="tl-title" data-i18n="edu1.title">M.S. in Network Learning Technology</h3>
+            <p class="tl-org" data-i18n="edu1.org">National Central University (NCU) &middot; Taoyuan, Taiwan</p>
           </div>
         </div>
 
@@ -184,11 +185,11 @@
           <div class="tl-dot"></div>
           <div class="tl-body">
             <div class="tl-meta">
-              <span class="tl-badge badge-edu">Education</span>
+              <span class="tl-badge badge-edu" data-i18n="exp.badge.edu">Education</span>
               <span class="tl-date mono">Sep 2016 — Jun 2020</span>
             </div>
-            <h3 class="tl-title">B.A. in Western Language and Literature</h3>
-            <p class="tl-org">National University of Kaohsiung (NUK) &middot; Kaohsiung, Taiwan</p>
+            <h3 class="tl-title" data-i18n="edu2.title">B.A. in Western Language and Literature</h3>
+            <p class="tl-org" data-i18n="edu2.org">National University of Kaohsiung (NUK) &middot; Kaohsiung, Taiwan</p>
           </div>
         </div>
 
@@ -200,7 +201,7 @@
   <section id="projects" class="sec">
     <div class="container">
       <div class="sec-head reveal">
-        <h2>Projects</h2>
+        <h2 data-i18n="proj.title">Projects</h2>
         <hr class="hr-small" />
       </div>
       <div class="proj-grid">
@@ -212,8 +213,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
-          <h3 class="proj-title">LeetCode Practice</h3>
-          <p class="proj-desc">Systematically solving 400+ algorithm problems in C++ and Python. Topics span arrays, binary trees, dynamic programming, sorting, graphs, and more. All solutions are organized and documented on GitHub as a growing reference.</p>
+          <h3 class="proj-title" data-i18n="proj1.title">LeetCode Practice</h3>
+          <p class="proj-desc" data-i18n="proj1.desc">Systematically solving 400+ algorithm problems in C++ and Python. Topics span arrays, binary trees, dynamic programming, sorting, graphs, and more. All solutions are organized and documented on GitHub as a growing reference.</p>
           <div class="proj-tags">
             <span>C++</span><span>Python</span><span>Algorithms</span><span>Data Structures</span>
           </div>
@@ -226,22 +227,22 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
-          <h3 class="proj-title">Mini Games Compilation</h3>
-          <p class="proj-desc">A multi-game compilation integrating Snake, Doodle Jump, and Tetris built with C++ OOP and the SFML library. Features scoring, level progression, and a high-score record system. Practiced the full software lifecycle from design through optimization.</p>
+          <h3 class="proj-title" data-i18n="proj2.title">Mini Games Compilation</h3>
+          <p class="proj-desc" data-i18n="proj2.desc">A multi-game compilation integrating Snake, Doodle Jump, and Tetris built with C++ OOP and the SFML library. Features scoring, level progression, and a high-score record system. Practiced the full software lifecycle from design through optimization.</p>
           <div class="proj-tags">
             <span>C++</span><span>SFML</span><span>OOP</span><span>Game Dev</span>
           </div>
         </article>
 
         <article class="proj-card reveal">
-          <div class="proj-top">  
+          <div class="proj-top">
             <span class="proj-date mono">Apr 2021 — Dec 2022</span>
             <a href="https://drive.google.com/file/d/1P4SkIvgeZafqu9M4vuFyDhix8Alhvc8f/view?usp=drive_link" target="_blank" rel="noopener" class="proj-ext" aria-label="Visit Cool English Platform">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
-          <h3 class="proj-title">Cool English Project</h3>
-          <p class="proj-desc">Led the planning and execution of 5 online English competitions for the Cool English platform, attracting 56,000+ participants. Organized logistics, coordinated with stakeholders, and implemented a Python automation tool that reduced administrative workload by 80%.</p>
+          <h3 class="proj-title" data-i18n="proj3.title">Cool English Project</h3>
+          <p class="proj-desc" data-i18n="proj3.desc">Led the planning and execution of 5 online English competitions for the Cool English platform, attracting 56,000+ participants. Organized logistics, coordinated with stakeholders, and implemented a Python automation tool that reduced administrative workload by 80%.</p>
           <div class="proj-tags">
             <span>Project Management</span><span>Communication</span><span>Event planning</span>
           </div>
@@ -255,20 +256,20 @@
   <section id="skills" class="sec sec-alt">
     <div class="container">
       <div class="sec-head reveal">
-        <h2>Skills &amp; Certifications</h2>
+        <h2 data-i18n="skills.title">Skills &amp; Certifications</h2>
         <hr class="hr-small" />
       </div>
       <div class="skills-wrap">
 
         <div class="skill-cat reveal">
-          <h3>Programming Languages</h3>
+          <h3 data-i18n="skills.cat.lang">Programming Languages</h3>
           <div class="sk-tags">
             <span>C</span><span>C++</span><span>Python</span><span>JavaScript</span><span>SQL</span>
           </div>
         </div>
 
         <div class="skill-cat reveal">
-          <h3>Systems &amp; Tools</h3>
+          <h3 data-i18n="skills.cat.systems">Systems &amp; Tools</h3>
           <div class="sk-tags">
             <span>Linux</span>
             <span>Docker</span>
@@ -281,7 +282,7 @@
         </div>
 
         <div class="skill-cat reveal">
-          <h3>Certificate</h3>
+          <h3 data-i18n="skills.cat.cert">Certificate</h3>
           <div class="sk-tags cert">
             <span>AWS Certified AI Practitioner</span>
             <span>Google Cybersecurity Certificate</span>
@@ -289,7 +290,7 @@
         </div>
 
         <div class="skill-cat reveal">
-          <h3>Languages</h3>
+          <h3 data-i18n="skills.cat.languages">Languages</h3>
           <div class="sk-tags lang">
             <span>Chinese (Native)</span>
             <span>English — TOEIC 955</span>
@@ -305,13 +306,13 @@
   <section id="contact" class="sec">
     <div class="container">
       <div class="sec-head reveal">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact.title">Contact</h2>
         <hr class="hr-small" />
       </div>
       <div class="contact-wrap reveal">
-        <p class="contact-intro">You can contact me at any time!</p>
+        <p class="contact-intro" data-i18n="contact.intro">You can contact me at any time!</p>
         <a href="mailto:b7258ter@gmail.com" class="contact-btn">
-          Start a Conversation
+          <span data-i18n="contact.btn">Start a Conversation</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </a>
         <div class="contact-socials">
@@ -336,7 +337,7 @@
   <footer class="footer">
     <div class="container">
       <p>Tsai Chen-Hung &middot; 蔡鎮鴻 &middot; 2025</p>
-      <p class="footer-sub">Crafted with HTML, CSS &amp; vanilla JavaScript</p>
+      <p class="footer-sub" data-i18n="footer.crafted">Crafted with HTML, CSS &amp; vanilla JavaScript</p>
     </div>
   </footer>
 

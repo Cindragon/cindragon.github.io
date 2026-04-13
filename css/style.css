@@ -179,6 +179,30 @@ strong { font-weight: 700; color: var(--text); }
   background: rgba(0, 133, 161, 0.06);
 }
 
+/* Language Toggle */
+.lang-toggle {
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: color var(--dur), border-color var(--dur), background var(--dur);
+  white-space: nowrap;
+}
+.lang-toggle:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+  background: var(--teal-dim);
+}
+
 /* Hamburger */
 .nav-hamburger {
   display: none;
