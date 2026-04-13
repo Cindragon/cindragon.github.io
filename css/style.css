@@ -552,7 +552,7 @@ strong { font-weight: 700; color: var(--text); }
 .proj-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: 24px;
 }
 
 .proj-card {
@@ -562,7 +562,7 @@ strong { font-weight: 700; color: var(--text); }
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.25s, border-color 0.25s;
-  margin: -1px 0 0 -1px; /* collapse borders like Beautiful Hugo */
+  margin: 0; /* collapse borders like Beautiful Hugo */
 }
 .proj-card:hover {
   box-shadow: 0 2px 20px rgba(0, 133, 161, 0.1);
